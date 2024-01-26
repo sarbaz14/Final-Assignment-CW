@@ -1,6 +1,5 @@
 %In the name of Allah(Gad)
 \documentclass[titlepage]{article}
-%\usepackage{graphicx} % Required for inserting images
 \usepackage{fancyhdr}
 
 
@@ -36,7 +35,8 @@
 
 \maketitle
 
-\section{Repository Initialization and Commits}
+\section{Git and GitHub}
+\subsection{Repository Initialization and Commits}
 \begin{enumerate}
     \item Opening the GitHub website
     \item Click the "New" button on the top left.
@@ -47,7 +47,7 @@
     \item Then enter the command "git remot add <url>" (replace "url" with the url from the "Code" page of the repository).
 \end{enumerate}
 
-\section{GitHub Actions for LaTeX Compilation}
+\subsection{GitHub Actions for LaTeX Compilation}
 \begin{enumerate}
     \item Creating main.yml file
     \item Placing main.yml file inside the .github/workflows folder
@@ -55,6 +55,29 @@
     \item Committing changes
     \item Pushing
     \item With main.yml configured correctly, actions should automatically execute once the latest Commit is tagged with a v*.*.* number. Finally, the code is pushed to GitHub with the command "git push origin v*.*.*".
+\end{enumerate}
+
+\section{Exploration Tasks}
+\subsection{Vim Advanced Features}
+\begin{enumerate}
+    \item \textbf{Macro recording:} Macro recording allows you to record a series of commands and then repeat them later whenever needed.
+        \begin{enumerate}
+            \item Enter record mode by pressing Ctrl+R
+            \item Perform the desired tasks that you want to record
+            \item When the recording is done, press Ctrl+R again to stop recording.
+            \item Press Ctrl+R to play the macro again.
+        \end{enumerate}
+
+    \item \textbf{Multiple Registers:} Vim uses multiple "registers" that allow you to quickly store and retrieve text. These registers can be used to store long lists or complex text formats such 
+        \begin{enumerate}
+            \item Enter the register command and type a letter to create a new register:\\
+            :register 'letter'
+            \item Enter the content you want to store by typing it on the command line.
+            \item Repeat this process as many times as needed to create multiple registers.
+            \item Retrieve the text from the register whenever you need it.
+        \end{enumerate}
+
+    \item \textbf{Plugins:} Vim is extremely customizable through plugins. There are numerous plugins available that extend the core capabilities of Vim.
 \end{enumerate}
 
 \end{document}
