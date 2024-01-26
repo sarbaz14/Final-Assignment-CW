@@ -1,5 +1,6 @@
 %In the name of Allah(Gad)
 \documentclass[titlepage]{article}
+%\usepackage{graphicx} % Required for inserting images
 \usepackage{fancyhdr}
 
 
@@ -44,6 +45,16 @@
     \item Click "Create repository".
     \item Now, in the system, within the desired folder, enter the command "git init".
     \item Then enter the command "git remot add <url>" (replace "url" with the url from the "Code" page of the repository).
+\end{enumerate}
+
+\section{GitHub Actions for LaTeX Compilation}
+\begin{enumerate}
+    \item Creating main.yml file
+    \item Placing main.yml file inside the .github/workflows folder
+    \item Adding the ".github" folder
+    \item Committing changes
+    \item Pushing
+    \item With main.yml configured correctly, actions should automatically execute once the latest Commit is tagged with a v*.*.* number. Finally, the code is pushed to GitHub with the command "git push origin v*.*.*".
 \end{enumerate}
 
 \end{document}
